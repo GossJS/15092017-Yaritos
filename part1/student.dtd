@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Autor Slepukhin Yaroslav  -->
 <!ELEMENT таблица (студент+)>
-<!ELEMENT студент (отметка, отметка, отметка, отметка)>
+<!ELEMENT студент (отметка, отметка, отметка, отметка?)>
 <!ATTLIST студент имя CDATA #REQUIRED>
 <!ELEMENT отметка (#PCDATA)>
 <!ATTLIST отметка дисциплина CDATA #REQUIRED>
