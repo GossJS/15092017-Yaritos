@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Autor Slepukhin Yaroslav  -->
+<!ELEMENT person (title,skill+)>
+<!ATTLIST person
+name CDATA #REQUIRED
+age CDATA #REQUIRED
+status CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT skill (python|http_https|SQL|DOM|SSL_TLS)>
+<!ATTLIST skill n CDATA #REQUIRED>
+<!ELEMENT python (django)>
+<!ATTLIST python v CDATA #REQUIRED>
+<!ELEMENT django EMPTY>
+<!ATTLIST django how CDATA #REQUIRED>
+<!ELEMENT http_https (html,css,javascrypt?)>
+<!ELEMENT html EMPTY>
+<!ATTLIST html v CDATA #REQUIRED>
+<!ELEMENT css EMPTY>
+<!ATTLIST css v CDATA #REQUIRED>
+<!ELEMENT SQL EMPTY>
+<!ELEMENT DOM EMPTY>
+<!ELEMENT SSL_TLS EMPTY>

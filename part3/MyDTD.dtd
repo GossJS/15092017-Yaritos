@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Autor Slepukhin Yaroslav  -->
+<!ELEMENT stats (ips, desktop, mobile)>
+<!ELEMENT ips (ip+)>
+<!ELEMENT ip EMPTY>
+<!ATTLIST ip
+addr CDATA #REQUIRED
+frequency CDATA #REQUIRED>
+<!ELEMENT desktop (Windows, Linux, Macintosh)>
+<!ELEMENT Windows EMPTY>
+<!ATTLIST Windows frequency CDATA #REQUIRED>
+<!ELEMENT Linux EMPTY>
+<!ATTLIST Linux frequency CDATA #REQUIRED>
+<!ELEMENT Macintosh EMPTY>
+<!ATTLIST Macintosh frequency CDATA #REQUIRED>
+<!ELEMENT mobile (iPhone, iPad, Android)>
+<!ELEMENT iPhone EMPTY>
+<!ATTLIST iPhone frequency CDATA #REQUIRED>
+<!ELEMENT iPad EMPTY>
+<!ATTLIST iPad frequency CDATA #REQUIRED>
+<!ELEMENT Android EMPTY>
+<!ATTLIST Android frequency CDATA #REQUIRED>
