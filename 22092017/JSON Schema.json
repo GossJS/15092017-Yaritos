@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "propperties": {
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "propperties": {
+          "login": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
